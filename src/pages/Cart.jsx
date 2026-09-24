@@ -278,7 +278,7 @@ function Cart() {
 
             <div className="payment-qr-frame">
               <img
-                src="/payment-qr.jpeg"
+                src={`${import.meta.env.BASE_URL}payment-qr.jpeg`}
                 alt="Restaurant payment QR code"
                 onError={(event) => {
                   event.currentTarget.style.display = "none";
