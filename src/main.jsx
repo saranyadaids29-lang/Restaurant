@@ -8,6 +8,11 @@ import { CartProvider } from "./context/CartContext";
 import "./index.css";
 import "./App.css";
 
+const redirect = new URLSearchParams(window.location.search).get("redirect");
+
+if (redirect) {
+  window.history.replaceState(null, "", `${import.meta.env.BASE_URL.replace(/\/$/, "")}${redirect}`);
+}
 
 ReactDOM.createRoot(
   document.getElementById("root")

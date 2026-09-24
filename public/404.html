@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script>
+      const basePath = "/Restaurant/";
+      const currentPath = window.location.pathname;
+      const route = currentPath.startsWith(basePath)
+        ? currentPath.slice(basePath.length - 1)
+        : "/";
+      const redirect = `${route}${window.location.search}${window.location.hash}`;
+
+      window.location.replace(
+        `${basePath}?redirect=${encodeURIComponent(redirect)}`
+      );
+    </script>
+  </head>
+  <body></body>
+</html>
