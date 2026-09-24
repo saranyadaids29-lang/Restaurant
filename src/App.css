@@ -1624,6 +1624,82 @@
   box-shadow: 0 16px 26px rgba(15, 23, 42, 0.06);
 }
 
+@media (max-width: 760px) {
+  .about-page {
+    padding: 36px 16px 56px;
+  }
+
+  .page-header {
+    margin-bottom: 22px;
+  }
+
+  .page-header h1 {
+    font-size: clamp(2rem, 9vw, 2.6rem);
+    line-height: 1.1;
+  }
+
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 20px;
+    border-radius: 22px;
+  }
+
+  .about-copy h2 {
+    font-size: clamp(1.8rem, 8vw, 2.4rem);
+    line-height: 1.12;
+  }
+
+  .about-copy p {
+    line-height: 1.65;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .about-stats div {
+    padding: 14px 12px;
+  }
+
+  .about-photo-card {
+    height: min(72vw, 300px);
+    min-height: 220px;
+    border-radius: 20px;
+  }
+
+  .about-grid,
+  .about-gallery {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .about-grid {
+    margin-top: 22px;
+  }
+
+  .about-card {
+    border-radius: 18px;
+    padding: 20px 18px;
+  }
+
+  .about-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .about-gallery {
+    margin-top: 24px;
+  }
+
+  .about-gallery img {
+    height: min(58vw, 240px);
+    min-height: 180px;
+    border-radius: 18px;
+  }
+}
+
 .empty-cart,
 .empty-page {
   max-width: 640px;
