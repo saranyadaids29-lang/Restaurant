@@ -900,6 +900,32 @@
   letter-spacing: -0.04em;
 }
 
+@media (max-width: 760px) {
+  .cart-page {
+    padding: 24px 16px 56px;
+  }
+
+  .page-title h1 {
+    font-size: clamp(2rem, 9vw, 2.8rem);
+    line-height: 1.1;
+  }
+
+  .cart-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+
+  .cart-items,
+  .cart-summary {
+    min-width: 0;
+  }
+
+  .cart-summary {
+    margin-top: 0;
+    padding: 20px 16px;
+  }
+}
+
 .summary-row,
 .summary-total {
   display: flex;
